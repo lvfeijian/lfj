@@ -1,0 +1,28 @@
+.menu {
+  width: 250px;
+  box-sizing: border-box;
+  height: 100%;
+  background: #fff;
+  .menu_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    float: left;
+    .menu_list_li{
+      cursor: pointer;
+      &:hover{
+        color: #ccc;
+      }
+      .iconfont {
+        margin: 20px 10px 0px;
+        font-size: 40px;
+      }
+    }
+    &:after {
+      content: "";
+      width: 120px;
+    }
+  }
+  
+}

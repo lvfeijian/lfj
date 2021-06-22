@@ -1,18 +1,34 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Menu></Menu>
+    <Middle></Middle>
+    <RightCont></RightCont>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  import Menu from '@/components/Menu.vue'
+  import Middle from '@/components/Middle.vue'
+  import RightCont from '@/components/RightCont.vue'
+  export default {
+    name: 'Home',
+    components: {
+      Menu, Middle, RightCont
+    },
+    data() {
+      return {
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+      }
+    }
   }
-}
 </script>
+
+<style scoped lang="less">
+.home{
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background: #F5F7FA;
+  display: flex;
+  justify-content: space-between;
+}
+</style>
